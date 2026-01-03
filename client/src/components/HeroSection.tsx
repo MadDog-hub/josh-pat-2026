@@ -108,6 +108,10 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             font-size: 3rem !important;
             line-height: 1.1 !important;
           }
+          .hero-section .relative.z-10 {
+            justify-content: flex-start !important;
+            padding-top: 3rem !important;
+          }
         }
 
         /* Custom underscore cursor for TypeAnimation */
