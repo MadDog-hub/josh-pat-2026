@@ -101,7 +101,7 @@ const HashtagGiftsSection = () => {
                   <p className="text-sm font-bold text-foreground mb-1">JoshPatWedding</p>
                   <div className="aspect-square bg-white border-2 border-primary/20 rounded-lg p-2 mb-2">
                     <img 
-                      src={optimizeCloudinaryUrl("https://res.cloudinary.com/dnib23v4d/image/upload/v1767443327/giftqr_lvcqoj.jpg", { width: 400, quality: 'auto' })} 
+                      src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767443953/giftqr_wc1vip.jpg" 
                       alt="BDO QR Code"
                       className="w-full h-full object-contain"
                     />
