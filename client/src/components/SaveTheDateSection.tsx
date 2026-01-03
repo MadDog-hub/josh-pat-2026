@@ -74,21 +74,45 @@ const SaveTheDateSection = ({ audioRef }: SaveTheDateSectionProps) => {
   return (
     <section className="bg-white relative w-full overflow-hidden py-12">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 
-          className="text-4xl md:text-5xl text-center text-primary mb-8"
-          style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}
-          data-testid="text-save-the-date-title"
-        >
-          The Proposal
-        </h2>
-        
-        <div className="relative w-full max-w-[350px] mx-auto overflow-hidden rounded-xl shadow-2xl" style={{ aspectRatio: '9/16' }}>
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="https://res.cloudinary.com/dc36azfgf/video/upload/v1767436821/proposal_vid_cnxzsj.mp4"
-            controls
-            data-testid="video-save-the-date"
-          />
+        <div className="space-y-12">
+          {/* YouTube Video Section */}
+          <div className="space-y-6">
+            <h3 
+              className="text-3xl md:text-4xl text-center text-primary italic"
+              style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}
+            >
+              Save the Date
+            </h3>
+            <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl aspect-video bg-black/5">
+              <iframe
+                ref={iframeRef}
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/LnmAmSoTx_4?enablejsapi=1&rel=0&showinfo=0&modestbranding=1"
+                title="Save the Date Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          {/* Proposal Video Section */}
+          <div className="space-y-6">
+            <h3 
+              className="text-3xl md:text-4xl text-center text-primary italic"
+              style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}
+            >
+              The Proposal
+            </h3>
+            <div className="relative w-full max-w-[350px] mx-auto overflow-hidden rounded-xl shadow-2xl" style={{ aspectRatio: '9/16' }}>
+              <video
+                className="absolute inset-0 w-full h-full object-cover"
+                src="https://res.cloudinary.com/dc36azfgf/video/upload/v1767436821/proposal_vid_cnxzsj.mp4"
+                controls
+                data-testid="video-proposal"
+              />
+            </div>
+          </div>
         </div>
       </div>
       
