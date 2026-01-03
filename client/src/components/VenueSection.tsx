@@ -18,6 +18,7 @@ const VenueSection = () => {
       mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.0315976022525!2d121.1603207!3d14.597275400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b8b089fa70bb%3A0x3a2922d867e8bd24!2sImmaculate%20Heart%20of%20Mary%20(Diocese%20of%20Antipolo)!5e0!3m2!1sen!2sph!4v1767439184226!5m2!1sen!2sph',
       description: 'Witness our vows and the beginning of our journey together at The Parish of Immaculate Heart of Mary.',
       details: 'The ceremony begins at 3:00 PM. Please arrive by 2:30 PM to be seated.',
+      unpluggedNote: 'We invite you to be fully present with us during our ceremony. Please turn off all cameras and cellphones as we have professional photographers to capture these moments.',
       startTime: '3:00 PM',
       locationGuide: 'View on Maps →'
     },
@@ -133,6 +134,13 @@ const VenueSection = () => {
                       <p className="text-sm font-body text-foreground/80 italic" data-testid={`text-${venue.title.toLowerCase()}-details`}>
                         {venue.details}
                       </p>
+                      {venue.unpluggedNote && (
+                        <div className="mt-4 p-4 bg-primary/5 border border-primary/10 rounded-lg">
+                          <p className="text-xs md:text-sm font-body text-primary font-medium italic">
+                            {venue.unpluggedNote}
+                          </p>
+                        </div>
+                      )}
                     </div>
 
                     {/* Right Column - Map */}
