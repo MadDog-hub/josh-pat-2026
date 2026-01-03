@@ -33,20 +33,20 @@ const EntourageSection = () => {
         { role: "Candle", names: ["Princess Clarette Tamilloso", "Raymark Rodriguez"] }
       ]
     },
-    bestMan: { name: "Ervin John Dy", role: "Best Man" },
-    maidOfHonor: { name: "Raia Christianne Aman", role: "Maid of Honour" },
-    manOfHonor: { name: "Arvin Roi DL Macaraeg", role: "Man of Honour" },
+    bestMan: { name: "ERVIN JOHN DY", role: "BEST MAN" },
+    maidOfHonor: { name: "RAIA CHRISTIANNE AMAN", role: "MAID OF HONOUR" },
+    manOfHonor: { name: "ARVIN ROI DL MACARAEG", role: "MAN OF HONOUR" },
     groomsmen: [
-      "Raphael Clemente Aman",
-      "John Christian Caratiquit",
-      "Raymark Rodriguez",
-      "James Charvet"
+      "RAPHAEL CLEMENTE AMAN",
+      "JOHN CHRISTIAN CARATIQUIT",
+      "RAYMARK RODRIGUEZ",
+      "JAMES CHARVET"
     ],
     bridesmaids: [
-      "Angeline Claire Macaraeg",
-      "Ella Mae Esliza",
-      "Princess Clarette Tamilloso",
-      "Harlynn Samson"
+      "ANGELINE CLAIRE MACARAEG",
+      "ELLA MAE ESLIZA",
+      "PRINCESS CLARETTE TAMILLOSO",
+      "HARLYNN SAMSON"
     ],
     bearers: [
       { role: "Ring Bearer", names: ["Clarence Angelo Enriquez"] },
@@ -159,42 +159,7 @@ const EntourageSection = () => {
           </div>
         </motion.div>
 
-        {/* Best Man, Maid of Honor, Man of Honor */}
-        <motion.div 
-          className="mb-8 md:mb-12"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
-        >
-          <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto">
-            <div className="text-center" data-testid="best-man-section">
-              <h3 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary">
-                {entourageData.bestMan.role}
-              </h3>
-              <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="best-man-name">
-                {entourageData.bestMan.name}
-              </p>
-            </div>
-            <div className="text-center" data-testid="maid-of-honor-section">
-              <h3 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary">
-                {entourageData.maidOfHonor.role}
-              </h3>
-              <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="maid-of-honor-name">
-                {entourageData.maidOfHonor.name}
-              </p>
-            </div>
-            <div className="text-center" data-testid="man-of-honor-section">
-              <h3 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary">
-                {entourageData.manOfHonor.role}
-              </h3>
-              <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="man-of-honor-name">
-                {entourageData.manOfHonor.name}
-              </p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Groomsmen & Bridesmaids */}
+        {/* Bearers & Flower Girls */}
         <motion.div 
           className="mb-8 md:mb-12"
           initial={{ opacity: 0, y: 30 }}
@@ -204,8 +169,18 @@ const EntourageSection = () => {
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="text-center" data-testid="groomsmen-section">
               <h3 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary">
-                Groom Crew
+                GROOM CREW
               </h3>
+              <div className="mb-4">
+                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider mb-1">BEST MAN</h4>
+                <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="best-man-name">
+                  {entourageData.bestMan.name}
+                </p>
+              </div>
+              <div className="mb-4">
+                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider mb-1">GROOMS MAID</h4>
+                <p className="text-xs md:text-base lg:text-lg font-telma text-foreground">GLADYS MANDREZA</p>
+              </div>
               {entourageData.groomsmen.map((name, index) => (
                 <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1" data-testid={`groomsman-${index}`}>
                   {name}
@@ -214,8 +189,20 @@ const EntourageSection = () => {
             </div>
             <div className="text-center" data-testid="bridesmaids-section">
               <h3 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary">
-                Bride Tribe
+                BRIDE TRIBE
               </h3>
+              <div className="mb-4">
+                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider mb-1">MAID OF HONOUR</h4>
+                <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="maid-of-honor-name">
+                  {entourageData.maidOfHonor.name}
+                </p>
+              </div>
+              <div className="mb-4">
+                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider mb-1">MAN OF HONOUR</h4>
+                <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="man-of-honor-name">
+                  {entourageData.manOfHonor.name}
+                </p>
+              </div>
               {entourageData.bridesmaids.map((name, index) => (
                 <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1" data-testid={`bridesmaid-${index}`}>
                   {name}
