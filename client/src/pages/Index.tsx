@@ -19,6 +19,7 @@ import Footer from '@/components/Footer';
 import CoverSection from '@/components/CoverSection';
 import InvitationRevealSection from '@/components/InvitationRevealSection';
 import SaveTheDateSection from '@/components/SaveTheDateSection';
+import ProposalVideoSection from '@/components/ProposalVideoSection';
 import MusicConsentPopup from '@/components/MusicConsentPopup';
 import { AnimationContext } from '@/contexts/AnimationContext';
 
@@ -78,6 +79,7 @@ const Index = () => {
         <DressCodeSection />
         <HashtagGiftsSection />
         <SaveTheDateSection audioRef={audioRef} />
+        <ProposalVideoSection />
         <MemorableMomentsSection />
         <RSVPSection />
         <CoverSection
