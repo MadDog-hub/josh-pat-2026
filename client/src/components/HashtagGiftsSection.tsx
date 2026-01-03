@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { optimizeCloudinaryUrl } from '@/lib/cloudinaryOptimize';
+
 const backgroundImage = 'https://res.cloudinary.com/dc36azfgf/image/upload/v1767436693/gift_guide_rys7kd.jpg';
 
 const qrCodeImage = optimizeCloudinaryUrl("https://res.cloudinary.com/dr3xey7h9/image/upload/v1760112758/e0470bd7-d558-4ffc-ab72-05979e344aee.png", { width: 400, quality: 'auto:good' });
@@ -57,7 +58,7 @@ const HashtagGiftsSection = () => {
                 transition={{ duration: 0.6, delay: 1.2 }}
               >
                 <p 
-                  className="text-sm md:text-base text-foreground/80 leading-relaxed"
+                  className="text-sm md:text-base text-foreground/80 leading-relaxed mb-8"
                   data-testid="text-gifts-message"
                 >
                   Your presence at our wedding is the greatest gift of all. However, should you wish to help us celebrate with a gift,
@@ -66,6 +67,50 @@ const HashtagGiftsSection = () => {
                   <br /><br />
                   in the moments we missed while being apart!
                 </p>
+
+                {/* 4 Images Layout */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                  {[
+                    "https://res.cloudinary.com/dnib23v4d/image/upload/v1767443318/Newlywed_-_1_rjpza8.jpg",
+                    "https://res.cloudinary.com/dnib23v4d/image/upload/v1767443318/Newlywed_-_3_amthho.jpg",
+                    "https://res.cloudinary.com/dnib23v4d/image/upload/v1767443318/Newlywed_-_2_c2twzx.jpg",
+                    "https://res.cloudinary.com/dnib23v4d/image/upload/v1767443319/Newlywed_-_4_kbuxjq.jpg"
+                  ].map((url, idx) => (
+                    <div key={idx} className="aspect-[3/4] rounded-lg overflow-hidden shadow-sm border border-border/50">
+                      <img 
+                        src={optimizeCloudinaryUrl(url, { width: 300, quality: 'auto' })} 
+                        alt={`Gift Option ${idx + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                {/* QR Code and Bank Details Text */}
+                <div className="space-y-2 mb-6">
+                  <p className="text-sm font-medium text-foreground/80 italic">Give from the heart,</p>
+                  <p className="text-sm font-medium text-foreground/80 italic">Whatever feels right to you!</p>
+                  <p className="text-sm font-bold text-primary mt-4 uppercase tracking-wide">QR codes and Bank details</p>
+                </div>
+
+                {/* QR Code Card */}
+                <div className="max-w-[280px] mx-auto bg-white rounded-xl shadow-lg border border-border/30 p-4">
+                  <div className="flex justify-center mb-2">
+                    <span className="font-bold text-[#0033A0] text-2xl tracking-tighter">BDO</span>
+                  </div>
+                  <p className="text-sm font-bold text-foreground mb-1">JoshPatWedding</p>
+                  <div className="aspect-square bg-white border-2 border-primary/20 rounded-lg p-2 mb-2">
+                    <img 
+                      src={optimizeCloudinaryUrl("https://res.cloudinary.com/dnib23v4d/image/upload/v1767443327/giftqr_lvcqoj.jpg", { width: 400, quality: 'auto' })} 
+                      alt="BDO QR Code"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <p className="text-[10px] text-foreground/60 leading-tight">
+                    BDO to BDO transfers are free.<br />
+                    Fees may apply for non-BDO transfers.
+                  </p>
+                </div>
               </motion.div>
             </motion.div>
           </div>
