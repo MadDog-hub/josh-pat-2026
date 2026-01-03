@@ -67,9 +67,13 @@ const Index = () => {
         <StorySection />
         <SaveTheDateSection audioRef={audioRef} />
         <ScrollTriggeredTimeline />
+        <CoverSection
+          imageUrl="https://res.cloudinary.com/dc36azfgf/image/upload/v1767436692/1_fav_prenup_kyhjl4.jpg"
+          alt="Josh & Pat Wedding Cover 1"
+        />
         <VenueSection />
         <CoverSection
-          imageUrl={cover2Image}
+          imageUrl="https://res.cloudinary.com/dc36azfgf/image/upload/v1767436692/2_fav_prenup_hkvxlo.jpg"
           alt="Josh & Pat Wedding Cover 2"
         />
         <DressCodeSection />
@@ -77,13 +81,8 @@ const Index = () => {
         <MemorableMomentsSection />
         <RSVPSection />
         <CoverSection
-          youtubeVideoId="EMa2ePJdSso"
-          youtubeStartTime={14}
-          youtubeEndTime={30}
-          alt="Wedding Video Cover"
-          showControls={false}
-          showYoutubeBranding={false}
-          enableInteraction={false}
+          imageUrl="https://res.cloudinary.com/dc36azfgf/image/upload/v1767436692/3_fav_prenup_sdq7sf.jpg"
+          alt="Josh & Pat Wedding Cover 3"
         />
         <EntourageSection />
         <FAQSection />
