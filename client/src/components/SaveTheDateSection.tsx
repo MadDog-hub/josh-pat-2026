@@ -73,17 +73,17 @@ const SaveTheDateSection = ({ audioRef }: SaveTheDateSectionProps) => {
 
   return (
     <section className="bg-white relative w-full overflow-hidden py-12">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="w-full">
         <div className="space-y-12">
           {/* YouTube Video Section */}
           <div className="space-y-6">
             <h3 
-              className="text-3xl md:text-4xl text-center text-primary italic"
+              className="text-3xl md:text-4xl text-center text-primary italic px-4"
               style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}
             >
               Save the Date
             </h3>
-            <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl aspect-video bg-black/5">
+            <div className="relative w-full overflow-hidden shadow-2xl aspect-video bg-black/5">
               <iframe
                 ref={iframeRef}
                 className="absolute inset-0 w-full h-full"
