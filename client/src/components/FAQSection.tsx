@@ -50,19 +50,9 @@ const FAQSection = () => {
       answer: "Yes! Parking is available at both the ceremony and reception venues. Please follow the instructions of the parking attendants at the ceremony and reception venues for a smooth experience."
     },
     {
-      question: "Are there nearby hotels in the Ceremony and Reception area?",
-      icon: Hotel,
-      answer: "Absolutely! There are several hotels and Airbnb options nearby. For convenience, we recommend the Fynn Boutique Hotel. Let us know if you'd like a little help with your booking — we'd be happy to assist!"
-    },
-    {
       question: "Can I take photos during the ceremony?",
       icon: Camera,
       answer: "We invite you to be fully present with us during this special moment. Please keep your phones and cameras away — our professional photographer will capture everything beautifully. Your smiles and presence mean the most to us!"
-    },
-    {
-      question: "Can I take photos during the reception?",
-      icon: Camera,
-      answer: "Yes, please do! Snap away during cocktail hour and the reception, and share your favorite memories using our official hashtags: #TheweddingofD&R and #D&R2026"
     }
   ];
 
