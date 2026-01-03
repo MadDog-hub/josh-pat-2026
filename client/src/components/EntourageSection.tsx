@@ -168,9 +168,6 @@ const EntourageSection = () => {
         >
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="text-center" data-testid="groomsmen-section">
-              <h3 className="text-sm md:text-lg lg:text-xl font-display font-bold mb-2 md:mb-3 text-primary">
-                GROOM CREW
-              </h3>
               <div className="grid grid-cols-2 gap-x-4 max-w-sm mx-auto mb-6">
                 <div className="text-right font-display font-semibold text-primary uppercase tracking-wider text-xs md:text-sm">BEST MAN</div>
                 <div className="text-left text-xs md:text-base lg:text-lg font-telma text-foreground">{entourageData.bestMan.name}</div>
@@ -188,9 +185,6 @@ const EntourageSection = () => {
               </div>
             </div>
             <div className="text-center" data-testid="bridesmaids-section">
-              <h3 className="text-sm md:text-lg lg:text-xl font-display font-bold mb-2 md:mb-3 text-primary">
-                BRIDE TRIBE
-              </h3>
               <div className="grid grid-cols-2 gap-x-4 max-w-sm mx-auto mb-6">
                 <div className="text-right font-display font-semibold text-primary uppercase tracking-wider text-xs md:text-sm">MAID OF HONOUR</div>
                 <div className="text-left text-xs md:text-base lg:text-lg font-telma text-foreground">{entourageData.maidOfHonor.name}</div>
