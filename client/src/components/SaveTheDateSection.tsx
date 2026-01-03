@@ -84,7 +84,7 @@ const SaveTheDateSection = ({ audioRef }: SaveTheDateSectionProps) => {
         
         <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
           <video
-            className="absolute inset-0 w-full h-full object-cover rounded-xl"
+            className="absolute inset-0 w-full h-full object-contain rounded-xl bg-black"
             src="https://res.cloudinary.com/dc36azfgf/video/upload/v1767436821/proposal_vid_cnxzsj.mp4"
             controls
             data-testid="video-save-the-date"
