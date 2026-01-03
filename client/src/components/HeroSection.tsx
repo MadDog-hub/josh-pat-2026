@@ -18,7 +18,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       {/* Background Image */}
       <img
         src={heroImage}
-        alt="Dong & Riza"
+        alt="Josh & Pat"
         className="absolute inset-0 w-full h-full object-cover"
         data-testid="hero-image"
       />
@@ -26,8 +26,8 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/40" />
       
-      {/* Content - Centered Names */}
-      <div className="relative z-10 flex flex-col items-center justify-start md:justify-center text-center px-6 h-full pt-10 md:pt-0">
+      {/* Content - Positioned top on mobile, center on desktop */}
+      <div className="absolute inset-x-0 top-0 md:relative md:top-auto z-10 flex flex-col items-center text-center px-6 pt-16 md:pt-0">
         {/* Tagline */}
         <div className={`transition-all duration-700 mb-4 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
           <p className="text-sm sm:text-base md:text-lg text-white font-light tracking-[0.3em] uppercase" data-testid="text-tagline" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
