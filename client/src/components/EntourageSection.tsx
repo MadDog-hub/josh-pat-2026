@@ -170,7 +170,7 @@ const EntourageSection = () => {
             <div className="text-center" data-testid="groomsmen-section">
               <div className="grid grid-cols-1 gap-4 md:gap-6 mb-8">
                 <div className="text-center">
-                  <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
+                  <h4 className="text-xs md:text-sm font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
                     BEST MAN
                   </h4>
                   <p className="text-xs md:text-base lg:text-lg font-telma text-foreground">
@@ -178,7 +178,7 @@ const EntourageSection = () => {
                   </p>
                 </div>
                 <div className="text-center">
-                  <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
+                  <h4 className="text-xs md:text-sm font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
                     GROOMS MAID
                   </h4>
                   <p className="text-xs md:text-base lg:text-lg font-telma text-foreground">
@@ -188,7 +188,7 @@ const EntourageSection = () => {
               </div>
               
               <div className="mt-8">
-                <h4 className="text-sm md:text-lg lg:text-xl font-display font-bold mb-2 md:mb-3 text-primary uppercase">GROOMS MEN</h4>
+                <h4 className="text-xs md:text-sm font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">GROOMS MEN</h4>
                 {entourageData.groomsmen.map((name, index) => (
                   <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1" data-testid={`groomsman-${index}`}>
                     {name}
@@ -199,7 +199,7 @@ const EntourageSection = () => {
             <div className="text-center" data-testid="bridesmaids-section">
               <div className="grid grid-cols-1 gap-4 md:gap-6 mb-8">
                 <div className="text-center">
-                  <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
+                  <h4 className="text-xs md:text-sm font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
                     MAID OF HONOUR
                   </h4>
                   <p className="text-xs md:text-base lg:text-lg font-telma text-foreground">
@@ -207,7 +207,7 @@ const EntourageSection = () => {
                   </p>
                 </div>
                 <div className="text-center">
-                  <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
+                  <h4 className="text-xs md:text-sm font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
                     MAN OF HONOUR
                   </h4>
                   <p className="text-xs md:text-base lg:text-lg font-telma text-foreground">
@@ -217,7 +217,7 @@ const EntourageSection = () => {
               </div>
 
               <div className="mt-8">
-                <h4 className="text-sm md:text-lg lg:text-xl font-display font-bold mb-2 md:mb-3 text-primary uppercase">BRIDESMAIDS</h4>
+                <h4 className="text-xs md:text-sm font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">BRIDESMAIDS</h4>
                 {entourageData.bridesmaids.map((name, index) => (
                   <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1" data-testid={`bridesmaid-${index}`}>
                     {name}
