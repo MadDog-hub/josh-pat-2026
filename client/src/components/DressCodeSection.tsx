@@ -68,7 +68,7 @@ const DressCodeSection = () => {
                         <motion.img 
                           src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767449384/b201bf04-8571-4ddb-b452-06747e45ea17.png"
                           alt="Gentlemen Principal Sponsors attire"
-                          className="w-full max-w-lg mx-auto object-contain rounded-2xl shadow-lg"
+                          className="w-full max-w-md mx-auto object-contain rounded-2xl shadow-lg"
                           initial={{ opacity: 0, scale: 0.9 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ duration: 0.8, delay: 8.5 }}
@@ -79,7 +79,7 @@ const DressCodeSection = () => {
                         <motion.img 
                           src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767451334/49b61cf5-c745-43a5-aaf0-67a815e5e732.png"
                           alt="Ladies Principal Sponsors attire"
-                          className="w-full max-w-lg mx-auto object-contain rounded-2xl shadow-lg"
+                          className="w-full max-w-md mx-auto object-contain rounded-2xl shadow-lg"
                           initial={{ opacity: 0, scale: 0.9 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ duration: 0.8, delay: 8.6 }}
@@ -138,7 +138,7 @@ const DressCodeSection = () => {
                         <motion.img 
                           src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767451360/3225f580-936f-433e-b835-5a72e3aa6ab8.png"
                           alt="Gentlemen Guests attire"
-                          className="w-full max-w-lg mx-auto object-contain rounded-2xl shadow-lg"
+                          className="w-full max-w-md mx-auto object-contain rounded-2xl shadow-lg"
                           initial={{ opacity: 0, scale: 0.9 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ duration: 0.8, delay: 8.8 }}
@@ -149,7 +149,7 @@ const DressCodeSection = () => {
                         <motion.img 
                           src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767447581/78cf6737-ea4d-489d-88b0-520ab948ab6a.png"
                           alt="Ladies Guests attire"
-                          className="w-full max-w-lg mx-auto object-contain rounded-2xl shadow-lg"
+                          className="w-full max-w-md mx-auto object-contain rounded-2xl shadow-lg"
                           initial={{ opacity: 0, scale: 0.9 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ duration: 0.8, delay: 8.9 }}
