@@ -68,16 +68,12 @@ const DressCodeSection = () => {
                     <h3 className="text-xl font-display font-medium text-foreground mb-4 relative z-10">
                       FOR PRINCIPAL SPONSORS
                     </h3>
-                    <div className="grid grid-cols-2 gap-4 text-left px-4">
+                    <div className="grid grid-cols-2 gap-4 text-center px-4">
                       <div>
-                        <p className="text-sm font-semibold text-foreground mb-2">Gentlemen:</p>
-                        <p className="text-sm text-foreground">Barong attire</p>
-                        <p className="text-sm text-foreground">Brown or khaki slacks</p>
+                        <p className="text-sm font-semibold text-foreground mb-2">Gentlemen</p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-foreground mb-2">Ladies:</p>
-                        <p className="text-sm text-foreground">Modern Filipiniana</p>
-                        <p className="text-sm text-foreground">or Long Evening Gown</p>
+                        <p className="text-sm font-semibold text-foreground mb-2">Ladies</p>
                       </div>
                     </div>
                   </div>
@@ -145,16 +141,12 @@ const DressCodeSection = () => {
                     <h3 className="text-xl font-display font-medium text-foreground mb-4 relative z-10">
                       FOR GUESTS
                     </h3>
-                    <div className="grid grid-cols-2 gap-4 text-left px-4 mb-3">
+                    <div className="grid grid-cols-2 gap-4 text-center px-4 mb-3">
                       <div>
-                        <p className="text-sm font-semibold text-foreground mb-2">Gentlemen:</p>
-                        <p className="text-sm text-foreground">Barong or Polo Barong</p>
-                        <p className="text-sm text-foreground">Black slacks</p>
+                        <p className="text-sm font-semibold text-foreground mb-2">Gentlemen</p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-foreground mb-2">Ladies:</p>
-                        <p className="text-sm text-foreground">Modern Filipiniana</p>
-                        <p className="text-sm text-foreground">or Long Evening Gown</p>
+                        <p className="text-sm font-semibold text-foreground mb-2">Ladies</p>
                       </div>
                     </div>
                   </div>
