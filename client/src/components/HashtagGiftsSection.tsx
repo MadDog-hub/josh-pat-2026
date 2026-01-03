@@ -60,13 +60,11 @@ const HashtagGiftsSection = () => {
                   className="text-sm md:text-base text-foreground/80 leading-relaxed"
                   data-testid="text-gifts-message"
                 >
-                  Your presence is the greatest gift we could ever receive.
+                  Your presence at our wedding is the greatest gift of all. However, should you wish to help us celebrate with a gift,
                   <br /><br />
-                  Should you wish to extend your generosity, a token of love and support toward our new beginnings would be deeply appreciated.
+                  you may want to consider our <span className="font-semibold text-primary">NEWLYWED FUND</span> or <span className="font-semibold text-primary">WISHING WELL</span>, as we look forward to filling
                   <br /><br />
-                  With love and gratitude,
-                  <br />
-                  Dong and Riza
+                  in the moments we missed while being apart!
                 </p>
               </motion.div>
             </motion.div>
