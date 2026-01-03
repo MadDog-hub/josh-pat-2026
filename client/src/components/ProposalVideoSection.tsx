@@ -40,12 +40,11 @@ const ProposalVideoSection = ({ audioRef }: ProposalVideoSectionProps) => {
         <div className="space-y-6">
           <div className="max-w-6xl mx-auto px-4 text-center">
             <h2 
-              className="text-4xl md:text-5xl text-primary mb-2"
-              style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 300 }}
+              className="text-5xl font-display font-light italic text-gold-bright mb-8"
+              data-testid="text-proposal-title"
             >
               The Proposal
             </h2>
-            <div className="w-24 h-px bg-primary/20 mx-auto mb-8" />
           </div>
           <div className="relative w-full overflow-hidden shadow-2xl" style={{ aspectRatio: '9/16' }}>
             <video

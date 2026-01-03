@@ -77,12 +77,12 @@ const SaveTheDateSection = ({ audioRef }: SaveTheDateSectionProps) => {
         <div className="space-y-12">
           {/* YouTube Video Section */}
           <div className="space-y-6">
-            <h3 
-              className="text-3xl md:text-4xl text-center text-primary italic px-4"
-              style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}
+            <h2 
+              className="text-5xl font-display font-light italic text-gold-bright mb-8 text-center"
+              data-testid="text-save-the-date-title"
             >
               Save the Date
-            </h3>
+            </h2>
             <div className="relative w-full overflow-hidden shadow-2xl aspect-video bg-black/5">
               <iframe
                 ref={iframeRef}
