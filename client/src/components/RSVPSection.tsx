@@ -66,7 +66,7 @@ const RSVPSection = () => {
               transition={{ duration: 0.6, delay: 11.4 }}
             >
               <a 
-                href="https://dong-riza-rsvp.replit.app" 
+                href="https://josh-pat-rsvp.replit.app" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block px-10 py-4 bg-primary text-primary-foreground text-sm md:text-base font-display tracking-wider hover:bg-primary/90 transition-colors duration-300 border-2 border-primary uppercase"
