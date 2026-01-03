@@ -27,7 +27,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       <div className="absolute inset-0 bg-black/40" />
       
       {/* Content - Positioned top on mobile, center on desktop */}
-      <div className="absolute inset-x-0 top-0 md:relative md:top-auto z-10 flex flex-col items-center text-center px-6 pt-16 md:pt-0">
+      <div className="absolute inset-x-0 top-0 md:relative md:top-auto z-10 flex flex-col items-center text-center px-6 pt-24 md:pt-0">
         {/* Tagline */}
         <div className={`transition-all duration-700 mb-4 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
           <p className="text-sm sm:text-base md:text-lg text-white font-light tracking-[0.3em] uppercase" data-testid="text-tagline" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
