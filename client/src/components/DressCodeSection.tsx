@@ -1,9 +1,4 @@
 import { motion } from 'framer-motion';
-import { optimizeCloudinaryUrl } from '@/lib/cloudinaryOptimize';
-import principalSponsorsImage from '@assets/princi_1762584098544.png';
-import flower9 from '@assets/flower9_1759741371017.png';
-import flower3 from '@assets/flower3_1759741371015.png';
-import guestsImage from '@assets/guests_1762584098544.png';
 
 const DressCodeSection = () => {
   const dressCodeColors = [
@@ -95,14 +90,14 @@ const DressCodeSection = () => {
                   </div>
                 </motion.div>
                 
-                {/* Color Palette for Principal Sponsors Ladies */}
+                {/* Color Palette for Principal Sponsors */}
                 <motion.div
                   className="mt-6 pt-6 border-t border-primary/20"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 8.7 }}
                 >
-                  <p className="text-sm font-semibold text-foreground mb-3">Color Motif (Ladies)</p>
+                  <p className="text-sm font-semibold text-foreground mb-3">Color Motif</p>
                   <div className="flex justify-center gap-4">
                     {principalSponsorsColors.map((colorItem, index) => (
                       <div key={index} className="text-center">
@@ -166,108 +161,14 @@ const DressCodeSection = () => {
                   </div>
                 </motion.div>
                 
-                {/* Color Palette for Guest Ladies */}
+                {/* Color Palette for Guests */}
                 <motion.div
                   className="mt-6 pt-6 border-t border-primary/20"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 9.0 }}
                 >
-                  <p className="text-sm font-semibold text-foreground mb-3">Color Motif (Ladies)</p>
-                  <div className="grid grid-cols-4 gap-2 sm:gap-3">
-                    {dressCodeColors.map((colorItem, index) => (
-                      <div key={index} className="text-center">
-                        <div 
-                          className="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-xl border-2 border-border shadow-soft hover:scale-105 transition-transform duration-300"
-                          style={{ backgroundColor: colorItem.color }}
-                        ></div>
-                        <p className="text-xs text-foreground mt-1">{colorItem.name}</p>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-                
-                {/* Color Palette for Principal Sponsors Ladies */}
-                <motion.div
-                  className="mt-6 pt-6 border-t border-primary/20"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 8.7 }}
-                >
-                  <p className="text-sm font-semibold text-foreground mb-3">Color Motif (Ladies)</p>
-                  <div className="flex justify-center gap-4">
-                    {principalSponsorsColors.map((colorItem, index) => (
-                      <div key={index} className="text-center">
-                        <div 
-                          className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl border-2 border-border shadow-soft hover:scale-105 transition-transform duration-300"
-                          style={{ backgroundColor: colorItem.color }}
-                        ></div>
-                        <p className="text-xs text-foreground mt-1">{colorItem.name}</p>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Guests */}
-          <motion.div 
-            className="group"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 8.4 }}
-            whileHover={{ scale: 1.02 }}
-          >
-            <div className="bg-white shadow-teal border border-primary/20 rounded-xl p-8 hover-elegant transition-all duration-500 h-full relative">
-              <div className="text-center">
-                <motion.div
-                  initial={{ scale: 0.8 }}
-                  animate={{ scale: 1 }}
-                  transition={{ duration: 0.6, delay: 8.6 }}
-                >
-                  <div className="mb-6 relative">
-                    <div className="absolute inset-0 bg-gradient-to-l from-primary/10 to-transparent rounded-2xl"></div>
-                    <h3 className="text-xl font-display font-medium text-foreground mb-4 relative z-10">
-                      FOR GUESTS
-                    </h3>
-                    <div className="grid grid-cols-2 gap-8 px-4 mb-3">
-                      <div className="text-center">
-                        <p className="text-sm font-semibold text-foreground mb-4">Gentlemen</p>
-                        <motion.img 
-                          src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767451360/3225f580-936f-433e-b835-5a72e3aa6ab8.png"
-                          alt="Gentlemen Guests attire"
-                          className="w-full object-contain rounded-2xl shadow-md"
-                          initial={{ opacity: 0, scale: 0.9 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.8, delay: 8.8 }}
-                        />
-                      </div>
-                      <div className="text-center">
-                        <p className="text-sm font-semibold text-foreground mb-4">Ladies</p>
-                        <motion.img 
-                          src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767447581/78cf6737-ea4d-489d-88b0-520ab948ab6a.png"
-                          alt="Ladies Guests attire"
-                          className="w-full object-contain rounded-2xl shadow-md"
-                          initial={{ opacity: 0, scale: 0.9 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.8, delay: 8.9 }}
-                        />
-                      </div>
-                    </div>
-                
-                {/* Color Palette for Guest Ladies */}
-                <motion.div
-                  className="mt-6 pt-6 border-t border-primary/20"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 9.0 }}
-                >
-                  <p className="text-sm font-semibold text-foreground mb-3">Color Motif (Ladies)</p>
+                  <p className="text-sm font-semibold text-foreground mb-3">Color Motif</p>
                   <div className="grid grid-cols-4 gap-2 sm:gap-3">
                     {dressCodeColors.map((colorItem, index) => (
                       <div key={index} className="text-center">
