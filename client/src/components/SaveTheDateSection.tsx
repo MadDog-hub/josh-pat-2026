@@ -82,9 +82,9 @@ const SaveTheDateSection = ({ audioRef }: SaveTheDateSectionProps) => {
           The Proposal
         </h2>
         
-        <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+        <div className="relative w-full max-w-[350px] mx-auto overflow-hidden rounded-xl shadow-2xl" style={{ aspectRatio: '9/16' }}>
           <video
-            className="absolute inset-0 w-full h-full object-contain rounded-xl bg-black"
+            className="absolute inset-0 w-full h-full object-cover"
             src="https://res.cloudinary.com/dc36azfgf/video/upload/v1767436821/proposal_vid_cnxzsj.mp4"
             controls
             data-testid="video-save-the-date"
