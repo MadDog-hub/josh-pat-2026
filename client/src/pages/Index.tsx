@@ -66,7 +66,7 @@ const Index = () => {
         <CountdownSection />
         <ImageLoop />
         <StorySection />
-        <ProposalVideoSection />
+        <ProposalVideoSection audioRef={audioRef} />
         <ScrollTriggeredTimeline />
         <CoverSection
           imageUrl="https://res.cloudinary.com/dc36azfgf/image/upload/v1767436692/1_fav_prenup_kyhjl4.jpg"
