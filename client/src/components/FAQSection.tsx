@@ -17,7 +17,7 @@ const FAQSection = () => {
     {
       question: "How do I confirm my attendance in your wedding?",
       icon: MessageCircle,
-      answer: "You can RSVP right here on our wedding website by clicking the RSVP button. We kindly ask that all guests RSVP by December 08, 2025 so we can plan everything perfectly!"
+      answer: "You can RSVP right here on our wedding website by clicking the RSVP button. We kindly ask that all guests RSVP by January 30, 2025 so we can plan everything perfectly!"
     },
     {
       question: "I RSVP-ed but have a change of plans. What should I do?",
