@@ -168,17 +168,17 @@ const EntourageSection = () => {
         >
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="text-center" data-testid="groomsmen-section">
-              <h3 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary">
+              <h3 className="text-sm md:text-lg lg:text-xl font-display font-bold mb-2 md:mb-3 text-primary">
                 GROOM CREW
               </h3>
-              <div className="mb-4">
-                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider mb-1">BEST MAN</h4>
+              <div className="mb-2">
+                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider">BEST MAN</h4>
                 <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="best-man-name">
                   {entourageData.bestMan.name}
                 </p>
               </div>
-              <div className="mb-4">
-                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider mb-1">GROOMS MAID</h4>
+              <div className="mb-2">
+                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider">GROOMS MAID</h4>
                 <p className="text-xs md:text-base lg:text-lg font-telma text-foreground">GLADYS MANDREZA</p>
               </div>
               {entourageData.groomsmen.map((name, index) => (
@@ -188,17 +188,17 @@ const EntourageSection = () => {
               ))}
             </div>
             <div className="text-center" data-testid="bridesmaids-section">
-              <h3 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary">
+              <h3 className="text-sm md:text-lg lg:text-xl font-display font-bold mb-2 md:mb-3 text-primary">
                 BRIDE TRIBE
               </h3>
-              <div className="mb-4">
-                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider mb-1">MAID OF HONOUR</h4>
+              <div className="mb-2">
+                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider">MAID OF HONOUR</h4>
                 <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="maid-of-honor-name">
                   {entourageData.maidOfHonor.name}
                 </p>
               </div>
-              <div className="mb-4">
-                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider mb-1">MAN OF HONOUR</h4>
+              <div className="mb-2">
+                <h4 className="text-xs md:text-sm font-display font-semibold text-primary uppercase tracking-wider">MAN OF HONOUR</h4>
                 <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="man-of-honor-name">
                   {entourageData.manOfHonor.name}
                 </p>
