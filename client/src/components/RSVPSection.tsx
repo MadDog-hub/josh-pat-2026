@@ -84,6 +84,22 @@ const RSVPSection = () => {
                 <p className="text-center">
                   <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-primary-foreground bg-primary">THE DEADLINE IS ON DECEMBER 08</span>
                 </p>
+
+                {/* Additional RSVP Notes */}
+                <div className="mt-8 pt-8 border-t border-primary/10 text-left space-y-6">
+                  <div>
+                    <h4 className="font-display font-bold text-primary uppercase tracking-wider text-sm mb-2 italic">*Plus one's*</h4>
+                    <p className="text-xs md:text-sm text-foreground/80 leading-relaxed font-body">
+                      Due to limited seating, we kindly request that only those formally addressed on the invitation join us for our celebration.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-primary uppercase tracking-wider text-sm mb-2 italic">*Children:*</h4>
+                    <p className="text-xs md:text-sm text-foreground/80 leading-relaxed font-body">
+                      While we adore children and want them to have fun, we kindly request an adults-only celebration, with the exception of those in the entourage.
+                    </p>
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>
