@@ -168,11 +168,23 @@ const EntourageSection = () => {
         >
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="text-center" data-testid="groomsmen-section">
-              <div className="grid grid-cols-2 gap-x-4 max-w-sm mx-auto mb-6">
-                <div className="text-right font-display font-semibold text-primary uppercase tracking-wider text-xs md:text-sm">BEST MAN</div>
-                <div className="text-left text-xs md:text-base lg:text-lg font-telma text-foreground">{entourageData.bestMan.name}</div>
-                <div className="text-right font-display font-semibold text-primary uppercase tracking-wider text-xs md:text-sm">GROOMS MAID</div>
-                <div className="text-left text-xs md:text-base lg:text-lg font-telma text-foreground">GLADYS MANDREZA</div>
+              <div className="grid grid-cols-1 gap-4 md:gap-6 mb-8">
+                <div className="text-center">
+                  <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
+                    BEST MAN
+                  </h4>
+                  <p className="text-xs md:text-base lg:text-lg font-telma text-foreground">
+                    {entourageData.bestMan.name}
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
+                    GROOMS MAID
+                  </h4>
+                  <p className="text-xs md:text-base lg:text-lg font-telma text-foreground">
+                    GLADYS MANDREZA
+                  </p>
+                </div>
               </div>
               
               <div className="mt-8">
@@ -185,11 +197,23 @@ const EntourageSection = () => {
               </div>
             </div>
             <div className="text-center" data-testid="bridesmaids-section">
-              <div className="grid grid-cols-2 gap-x-4 max-w-sm mx-auto mb-6">
-                <div className="text-right font-display font-semibold text-primary uppercase tracking-wider text-xs md:text-sm">MAID OF HONOUR</div>
-                <div className="text-left text-xs md:text-base lg:text-lg font-telma text-foreground">{entourageData.maidOfHonor.name}</div>
-                <div className="text-right font-display font-semibold text-primary uppercase tracking-wider text-xs md:text-sm">MAN OF HONOUR</div>
-                <div className="text-left text-xs md:text-base lg:text-lg font-telma text-foreground">{entourageData.manOfHonor.name}</div>
+              <div className="grid grid-cols-1 gap-4 md:gap-6 mb-8">
+                <div className="text-center">
+                  <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
+                    MAID OF HONOUR
+                  </h4>
+                  <p className="text-xs md:text-base lg:text-lg font-telma text-foreground">
+                    {entourageData.maidOfHonor.name}
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-1 md:mb-2 text-primary uppercase tracking-wider">
+                    MAN OF HONOUR
+                  </h4>
+                  <p className="text-xs md:text-base lg:text-lg font-telma text-foreground">
+                    {entourageData.manOfHonor.name}
+                  </p>
+                </div>
               </div>
 
               <div className="mt-8">
