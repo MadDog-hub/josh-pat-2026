@@ -7,15 +7,17 @@ import guestsImage from '@assets/guests_1762584098544.png';
 
 const DressCodeSection = () => {
   const dressCodeColors = [
-    { name: 'Olive Green', color: '#6B6F3C', hex: '#6B6F3C' },
-    { name: 'Light Brown', color: '#B8906B', hex: '#B8906B' },
-    { name: 'Sage Green', color: '#C8C89E', hex: '#C8C89E' },
-    { name: 'Cream Beige', color: '#D5C9B1', hex: '#D5C9B1' }
+    { name: '', color: '#be5738', hex: '#be5738' },
+    { name: '', color: '#be7f70', hex: '#be7f70' },
+    { name: '', color: '#d48246', hex: '#d48246' },
+    { name: '', color: '#d48246', hex: '#d48246' }
   ];
 
   const principalSponsorsColors = [
-    { name: 'Deep Mauve', color: '#855752', hex: '#855752' },
-    { name: 'Rose Taupe', color: '#9e6862', hex: '#9e6862' }
+    { name: '', color: '#0a1833', hex: '#0a1833' },
+    { name: '', color: '#b3cfe5', hex: '#b3cfe5' },
+    { name: '', color: '#4a7fa7', hex: '#4a7fa7' },
+    { name: '', color: '#1a3d63', hex: '#1a3d63' }
   ];
 
   return (
@@ -80,14 +82,24 @@ const DressCodeSection = () => {
                     </div>
                   </div>
                 </motion.div>
-                <motion.img 
-                  src={principalSponsorsImage}
-                  alt="Principal Sponsors attire guide"
-                  className="w-full max-w-md mx-auto object-contain rounded-2xl shadow-md group-hover:shadow-lg transition-shadow duration-300"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 8.5 }}
-                />
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <motion.img 
+                    src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767449384/b201bf04-8571-4ddb-b452-06747e45ea17.png"
+                    alt="Gentlemen Principal Sponsors attire"
+                    className="w-full object-contain rounded-2xl shadow-md"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 8.5 }}
+                  />
+                  <motion.img 
+                    src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767451334/49b61cf5-c745-43a5-aaf0-67a815e5e732.png"
+                    alt="Ladies Principal Sponsors attire"
+                    className="w-full object-contain rounded-2xl shadow-md"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 8.6 }}
+                  />
+                </div>
                 
                 {/* Color Palette for Principal Sponsors Ladies */}
                 <motion.div
@@ -147,14 +159,24 @@ const DressCodeSection = () => {
                     </div>
                   </div>
                 </motion.div>
-                <motion.img 
-                  src={guestsImage}
-                  alt="Guests attire guide"
-                  className="w-full max-w-md mx-auto object-contain rounded-2xl shadow-md group-hover:shadow-lg transition-shadow duration-300"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 8.8 }}
-                />
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <motion.img 
+                    src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767451360/3225f580-936f-433e-b835-5a72e3aa6ab8.png"
+                    alt="Gentlemen Guests attire"
+                    className="w-full object-contain rounded-2xl shadow-md"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 8.8 }}
+                  />
+                  <motion.img 
+                    src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767447581/78cf6737-ea4d-489d-88b0-520ab948ab6a.png"
+                    alt="Ladies Guests attire"
+                    className="w-full object-contain rounded-2xl shadow-md"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 8.9 }}
+                  />
+                </div>
                 
                 {/* Color Palette for Guest Ladies */}
                 <motion.div
