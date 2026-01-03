@@ -66,6 +66,7 @@ const Index = () => {
         <CountdownSection />
         <ImageLoop />
         <StorySection />
+        <ProposalVideoSection />
         <ScrollTriggeredTimeline />
         <CoverSection
           imageUrl="https://res.cloudinary.com/dc36azfgf/image/upload/v1767436692/1_fav_prenup_kyhjl4.jpg"
@@ -79,7 +80,6 @@ const Index = () => {
         <DressCodeSection />
         <HashtagGiftsSection />
         <SaveTheDateSection audioRef={audioRef} />
-        <ProposalVideoSection />
         <MemorableMomentsSection />
         <RSVPSection />
         <CoverSection
