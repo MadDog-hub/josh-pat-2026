@@ -92,8 +92,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-xl font-serif text-primary">Josh & Pat</h1>
+          <div className="flex-shrink-0 flex items-center">
+            <img 
+              src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767452524/image-removebg-preview_2_azuf3q.png" 
+              alt="Dong & Riza Logo" 
+              className="h-12 w-auto object-contain"
+              data-testid="img-navigation-logo"
+            />
           </div>
 
           {/* Desktop Navigation */}
