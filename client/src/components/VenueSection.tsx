@@ -135,11 +135,11 @@ const VenueSection = () => {
                         {venue.details}
                       </p>
                       {venue.unpluggedNote && (
-                        <div className="mt-4 p-4 bg-primary/5 border border-primary/10 rounded-lg">
-                          <p className="text-xs md:text-sm font-display font-bold text-primary mb-1 uppercase tracking-wider">
+                        <div className="mt-6 p-6 bg-primary/5 border border-primary/10 rounded-xl shadow-sm">
+                          <p className="text-sm md:text-base font-display font-bold text-primary mb-2 uppercase tracking-wider">
                             {venue.unpluggedNote.split('\n')[0]}
                           </p>
-                          <p className="text-xs md:text-sm font-body text-primary font-medium italic leading-relaxed">
+                          <p className="text-sm md:text-base font-body text-primary font-medium italic leading-relaxed">
                             {venue.unpluggedNote.split('\n')[1]}
                           </p>
                         </div>
