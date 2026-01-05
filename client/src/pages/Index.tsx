@@ -8,6 +8,9 @@ import cover2Image from '@assets/Dong&Ris-209_1762581138035.jpg';
 import CountdownSection from '@/components/CountdownSection';
 import StorySection from '@/components/StorySection';
 import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
+import VenueSection from '@/components/VenueSection';
+import AccommodationSection from '@/components/AccommodationSection';
+import DressCodeSection from '@/components/DressCodeSection';
 import HashtagGiftsSection from '@/components/HashtagGiftsSection';
 import EntourageSection from '@/components/EntourageSection';
 import RSVPSection from '@/components/RSVPSection';
@@ -70,6 +73,8 @@ const Index = () => {
           imageUrl="https://res.cloudinary.com/dc36azfgf/image/upload/v1767436692/1_fav_prenup_kyhjl4.jpg"
           alt="Josh & Pat Wedding Cover 1"
         />
+        <VenueSection />
+        <AccommodationSection />
         <DressCodeSection />
         <HashtagGiftsSection />
         <SaveTheDateSection audioRef={audioRef} />
