@@ -39,7 +39,7 @@ const AccommodationSection = () => {
           </div>
         </motion.div>
 
-        <div className="flex flex-col gap-8 md:gap-12 items-center">
+        <div className="flex flex-col gap-4 md:gap-8 items-center">
           {images.map((img, index) => (
             <motion.div
               key={index}
