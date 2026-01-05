@@ -103,6 +103,27 @@ const DressCodeSection = () => {
                     ))}
                   </div>
 
+                  {/* Photo Studio Info */}
+                  <motion.div
+                    className="max-w-2xl mx-auto"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                  >
+                    <p className="text-sm md:text-base text-muted-foreground mb-6 italic leading-relaxed">
+                      "Kindly dress in accordance with our curated color palette, as our on-site photo studio awaits to capture your most glamorous moments in style."
+                    </p>
+                    <div className="relative group overflow-hidden rounded-2xl shadow-xl border border-primary/20">
+                      <img 
+                        src="https://res.cloudinary.com/dbciwaal4/image/upload/v1767618055/9f05aa82-8287-47ca-8283-160b1842fa79.png"
+                        alt="On-site photo studio"
+                        className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
+                        <span className="text-white font-display italic text-lg tracking-wider">Capturing Memories</span>
+                      </div>
+                    </div>
                   </motion.div>
 
                   {/* Attire Restrictions Note */}
