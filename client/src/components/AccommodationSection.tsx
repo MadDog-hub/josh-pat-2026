@@ -39,7 +39,7 @@ const AccommodationSection = () => {
           </div>
         </motion.div>
 
-        <div className="flex flex-col gap-12 items-center">
+        <div className="flex flex-col gap-8 md:gap-12 items-center">
           {images.map((img, index) => (
             <motion.div
               key={index}
@@ -49,11 +49,11 @@ const AccommodationSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
-              <div className="bg-white p-1 md:p-2">
+              <div className="bg-white p-0.5 md:p-2">
                 <img 
                   src={img.url} 
                   alt={img.title}
-                  className="w-full h-auto object-contain rounded-lg"
+                  className="w-[120%] -ml-[10%] max-w-none md:w-full md:ml-0 h-auto object-contain rounded-lg"
                   loading="lazy"
                 />
               </div>
