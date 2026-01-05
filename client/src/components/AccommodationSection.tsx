@@ -39,22 +39,24 @@ const AccommodationSection = () => {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {images.map((img, index) => (
             <motion.div
               key={index}
-              className="relative overflow-hidden rounded-xl shadow-lg border border-primary/5 hover:shadow-xl transition-shadow duration-300"
+              className="relative overflow-hidden rounded-xl shadow-xl border border-primary/10 hover:shadow-2xl transition-shadow duration-300"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <img 
-                src={img.url} 
-                alt={img.title}
-                className="w-full h-auto object-cover"
-                loading="lazy"
-              />
+              <div className="bg-primary/5 p-2">
+                <img 
+                  src={img.url} 
+                  alt={img.title}
+                  className="w-full h-auto object-contain rounded-lg"
+                  loading="lazy"
+                />
+              </div>
             </motion.div>
           ))}
         </div>
