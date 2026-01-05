@@ -94,7 +94,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <img 
-              src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767452524/image-removebg-preview_2_azuf3q.png" 
+              src="https://res.cloudinary.com/dbciwaal4/image/upload/v1767606520/image-removebg-preview_6_y3wjxt.png" 
               alt="Dong & Riza Logo" 
               className="h-12 w-auto object-contain"
               data-testid="img-navigation-logo"
