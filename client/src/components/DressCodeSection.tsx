@@ -103,27 +103,19 @@ const DressCodeSection = () => {
                     ))}
                   </div>
 
-                  {/* Photo Studio Info */}
+                  </motion.div>
+
+                  {/* Attire Restrictions Note */}
                   <motion.div
-                    className="max-w-2xl mx-auto"
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    className="mt-12 text-center"
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
                   >
-                    <p className="text-sm md:text-base text-muted-foreground mb-6 italic leading-relaxed">
-                      "Kindly dress in accordance with our curated color palette, as our on-site photo studio awaits to capture your most glamorous moments in style."
+                    <p className="text-sm md:text-base text-muted-foreground max-w-xl mx-auto border-t border-primary/10 pt-8 italic">
+                      "To complement our special day, we kindly ask guests to refrain from wearing white, jeans or denim, and slippers or sandals."
                     </p>
-                    <div className="relative group overflow-hidden rounded-2xl shadow-xl border border-primary/20">
-                      <img 
-                        src="https://res.cloudinary.com/dbciwaal4/image/upload/v1767618055/9f05aa82-8287-47ca-8283-160b1842fa79.png"
-                        alt="On-site photo studio"
-                        className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
-                        <span className="text-white font-display italic text-lg tracking-wider">Capturing Memories</span>
-                      </div>
-                    </div>
                   </motion.div>
                 </motion.div>
               </div>
