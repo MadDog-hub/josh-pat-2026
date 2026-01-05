@@ -137,7 +137,7 @@ const DressCodeSection = () => {
                       <div className="text-center">
                         <p className="text-lg font-semibold text-foreground mb-6 uppercase tracking-wider">Gentlemen</p>
                         <motion.img 
-                          src="https://res.cloudinary.com/dnib23v4d/image/upload/v1767451360/3225f580-936f-433e-b835-5a72e3aa6ab8.png"
+                          src="https://res.cloudinary.com/dbciwaal4/image/upload/v1767608850/28abeabf-5c74-45c7-bac8-cfacbfcde4ac_cmro2k.png"
                           alt="Gentlemen Guests attire"
                           className="w-full max-w-md mx-auto object-contain rounded-2xl shadow-lg"
                           initial={{ opacity: 0, scale: 0.9 }}
