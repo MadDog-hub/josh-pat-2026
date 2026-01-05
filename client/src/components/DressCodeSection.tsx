@@ -2,6 +2,12 @@ import { motion } from 'framer-motion';
 
 const DressCodeSection = () => {
   const dressCodeColors = [
+    { name: '', color: '#be5738', hex: '#be5738' },
+    { name: '', color: '#be7f70', hex: '#be7f70' },
+    { name: '', color: '#d48246', hex: '#d48246' },
+    { name: '', color: '#e7c480', hex: '#e7c480' },
+    { name: '', color: '#654321', hex: '#654321' }
+  ];
 
   return (
     <motion.section 
@@ -105,7 +111,9 @@ const DressCodeSection = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                   >
-                    <p className="text-sm md:text-base text-muted-foreground mb-6 italic leading-relaxed">Kindly dress in accordance with our curated color palette, as our on-site photo studio awaits to capture your most glamorous moments in style.</p>
+                    <p className="text-sm md:text-base text-muted-foreground mb-6 italic leading-relaxed">
+                      "Kindly dress in accordance with our curated color palette, as our on-site photo studio awaits to capture your most glamorous moments in style."
+                    </p>
                     <div className="relative group overflow-hidden rounded-2xl shadow-xl border border-primary/20">
                       <img 
                         src="https://res.cloudinary.com/dbciwaal4/image/upload/v1767618055/9f05aa82-8287-47ca-8283-160b1842fa79.png"
