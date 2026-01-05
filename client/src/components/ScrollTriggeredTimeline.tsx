@@ -244,29 +244,6 @@ export default function ScrollTriggeredTimeline() {
                     <TimelineCard i={i} timelineEvent={timelineEvent} key={`${timelineEvent.event}-${i}`} />
                 ))}
             </div>
-            {/* Oh Snap! Section */}
-            <motion.div 
-                className="mt-16 max-w-md mx-auto text-center px-4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-            >
-                <div className="bg-white backdrop-blur-sm border border-primary/30 rounded-2xl p-8 shadow-teal">
-                    <div className="mb-4">
-                        <Camera className="w-12 h-12 mx-auto text-primary" />
-                    </div>
-                    <h3 className="text-2xl md:text-3xl font-script italic mb-4 text-foreground" data-testid="text-ohsnap-title">
-                        Oh Snap!
-                    </h3>
-                    <p className="text-sm md:text-base text-muted-foreground mb-4">
-                        Help us capture moments on our special day by using the hashtag
-                    </p>
-                    <div className="inline-block border-2 border-primary rounded-lg px-4 md:px-6 py-3 bg-[#ffffff] max-w-full">
-                        <p className="text-primary text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag">#TheweddingofD&R #D&R2026</p>
-                    </div>
-                </div>
-            </motion.div>
             {/* Bottom Decorative */}
             <motion.div 
                 className="mt-16 text-center pb-8"
