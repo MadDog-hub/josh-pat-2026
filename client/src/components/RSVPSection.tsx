@@ -82,6 +82,7 @@ const RSVPSection = () => {
                   Please confirm your attendance by responding to our invitation. Click the RSVP HERE! button above.
                 </p>
                 <p className="text-center">
+                  <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-primary-foreground bg-primary block mb-2">STRICTLY NO RSVP, NO ENTRY</span>
                   <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-primary-foreground bg-primary">THE DEADLINE IS ON JANUARY 20, 2026</span>
                 </p>
 
