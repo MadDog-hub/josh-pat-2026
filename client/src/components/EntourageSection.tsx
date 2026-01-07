@@ -17,7 +17,7 @@ const EntourageSection = () => {
       men: [
         "Mr. Rommel Aman",
         "Mr. Rodolfo Ella",
-        "Mr. Ernest Romeo Madronio"
+        "Mr. Romeo Ernest Madronio"
       ],
       women: [
         "Mrs. Julie De leon Urgeña",
