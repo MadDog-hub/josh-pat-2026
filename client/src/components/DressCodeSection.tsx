@@ -133,9 +133,7 @@ const DressCodeSection = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                   >
                     <div className="max-w-xl mx-auto border-t border-primary/10 pt-8">
-                      <p className="text-sm md:text-base text-primary font-medium bg-primary/5 py-4 px-6 rounded-lg inline-block">
-                        To complement our special day, we kindly ask guests to refrain from wearing white, jeans or denim, and slippers or sandals.
-                      </p>
+                      <p className="text-sm md:text-base text-primary font-medium bg-primary/5 py-4 px-6 rounded-lg inline-block">To complement our special day, we kindly ask guests to refrain from wearing white, jeans or denim, and slippers.</p>
                     </div>
                   </motion.div>
                 </motion.div>
