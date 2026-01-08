@@ -30,7 +30,7 @@ const EntourageSection = () => {
       roles: [
         { role: "Veil", names: ["Raia Christianne Aman", "Arvin Roi DL Macaraeg"] },
         { role: "Cord", names: ["Ervin John Dy", "Gladys Mandreza"] },
-        { role: "Candle", names: ["Princess Clarette Tamilloso", "REYMARK Rodriguez"] }
+        { role: "Candle", names: ["Princess Clarette Tamilloso", "Reymark Rodriguez"] }
       ]
     },
     bestMan: { name: "Ervin John Dy", role: "Best Man" },
@@ -39,7 +39,7 @@ const EntourageSection = () => {
     groomsmen: [
       "Raphael Clemente Aman",
       "John Christian Caratiquit",
-      "REYMARK Rodriguez",
+      "Reymark Rodriguez",
       "James Charvet"
     ],
     bridesmaids: [
